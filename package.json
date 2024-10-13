@@ -1,0 +1,25 @@
+{
+  "name": "product-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development nodemon backend/index.js",
+    "build": "npm install && npm install --prefix frontend && npm run build --prefix frontend",
+    "start": "cross-env NODE_ENV=production node backend/index.js"
+  },
+  "type": "module",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "js-cookie": "^3.0.5",
+    "mongoose": "^8.7.0",
+    "prop-types": "^15.8.1"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3"
+  }
+}
